@@ -1,1 +1,78 @@
 /*  your css code here. If applicable */
+/* Applies the requested background color to the whole page */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling (Satisfies Instruction #2) */
+.header {
+    background-color: #011e29;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px; /* Creates space between the header and the news cards */
+}
+
+.header h2 {
+    margin: 0;
+}
+
+/* Flexbox Layout to sit the 3 columns side-by-side */
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds clean spacing between the columns */
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the whole container on the screen */
+}
+
+/* Left Column Styling (Satisfies Instruction #3) */
+.latest-news-section {
+    background-color: white;
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.latest-news-section h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Middle Column Styling */
+.main-article-section {
+    background-color: white;
+    padding: 20px;
+    width: 50%; /* Gives the main article more room than the sidebars */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main-article-section h3 {
+    margin-top: 0;
+}
+
+/* Right Column Styling (Satisfies Instruction #4) */
+.pictorial-news-section {
+    background-color: white;
+    padding: 20px;
+    width: 25%;
+    text-align: center; 
+    border-radius: 10px; 
+}
+
+.pictorial-news-section h3 {
+    margin-top: 0;
+}
+
+/* Formats the images so they don't break out of the white card */
+.pictorial-news-section img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+}
